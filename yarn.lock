@@ -1189,10 +1189,10 @@
   resolved "https://registry.yarnpkg.com/@xtuc/long/-/long-4.2.2.tgz#d291c6a4e97989b5c61d9acf396ae4fe133a718d"
   integrity sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==
 
-"@zeit-ui/react@^1.8.0-canary.6":
-  version "1.8.0-canary.6"
-  resolved "https://registry.yarnpkg.com/@zeit-ui/react/-/react-1.8.0-canary.6.tgz#1f935ad4fb03785bbb89edec33c807658eec5477"
-  integrity sha512-zYvyyLl7ykOXoEBePjCKmOGeZqjt/Ql8Cq8Ql1f9Uqwyo/q+JCGdg//CbrvKCh3gmk4k4dN3WQZ6vO5hzzBtQw==
+"@zeit-ui/react@^1.8.0-canary.7":
+  version "1.8.0-canary.7"
+  resolved "https://registry.yarnpkg.com/@zeit-ui/react/-/react-1.8.0-canary.7.tgz#9ef5071beac51850c636ff5922dd219c829d5a2b"
+  integrity sha512-xhYAXTGiwcM7VUXRrrZ84k71WkQ0H1/UKBFxc0n3NzHUTwakLQTa5/Pfd7trx4lUNHGdcgmbQ4RXV9+tbvPPiA==
   dependencies:
     styled-jsx "^3.2.5"
 
