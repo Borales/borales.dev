@@ -9,6 +9,8 @@
     "export": "next export"
   },
   "dependencies": {
+    "@mdx-js/loader": "^1.6.16",
+    "@next/mdx": "^9.5.1",
     "@zeit-ui/react": "^1.8.0-canary.8",
     "next": "^9.5.1",
     "react": "^16.13.1",
