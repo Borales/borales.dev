@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Page, Text, Card, Note, Grid, Code, Row, User } from '@zeit-ui/react';
+import { Page, Text, Card, Note, Grid, User } from '@zeit-ui/react';
 
 export default function Home() {
   return (
