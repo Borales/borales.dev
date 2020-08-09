@@ -1,9 +1,10 @@
 import Head from 'next/head';
-import { Page, Text, Card, Note, Grid, User } from '@zeit-ui/react';
+import Layout from '../components/Layout';
+import { Text, Card, Note, Grid, User } from '@zeit-ui/react';
 
 export default function Home() {
   return (
-    <Page>
+    <Layout>
       <Head>
         <title>borales.dev</title>
         <link rel="icon" href="/favicon.ico" />
@@ -23,6 +24,6 @@ export default function Home() {
       <Card shadow>
         <Note type="error">Apologies, the page is in progress!</Note>
       </Card>
-    </Page>
+    </Layout>
   );
 }
