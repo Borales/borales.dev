@@ -9,7 +9,7 @@
     "export": "next export"
   },
   "dependencies": {
-    "@zeit-ui/react": "^1.8.0-canary.8",
+    "@zeit-ui/react": "^1.8.0-canary.9",
     "next": "^9.5.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
