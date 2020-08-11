@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "export": "next export"
+    "dev": "next dev",
+    "export": "next export",
+    "start": "next start"
   },
   "dependencies": {
     "@mdx-js/loader": "^1.6.16",
@@ -19,6 +19,7 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "prettier-plugin-package": "^1.0.0"
   }
 }
