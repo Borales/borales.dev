@@ -16,6 +16,12 @@ module.exports = withMdxEnhanced({
         behavior: 'append',
       },
     ],
+    [
+      require('@agentofuser/remark-oembed'),
+      {
+        replaceParent: true,
+      },
+    ],
   ],
   rehypePlugins: [],
   extendFrontMatter: {
