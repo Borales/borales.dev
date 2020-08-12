@@ -4,11 +4,25 @@ module.exports = withMdxEnhanced({
   layoutPath: 'layouts',
   defaultLayout: true,
   fileExtensions: ['mdx'],
-  remarkPlugins: [],
+  remarkPlugins: [
+    require('remark-slug'),
+    [
+      require('remark-autolink-headings'),
+      {
+        content: {
+          type: 'text',
+          value: '#',
+        },
+        behavior: 'append',
+      },
+    ],
+  ],
   rehypePlugins: [],
   extendFrontMatter: {
-    process: (mdxContent, frontMatter) => {},
-    phase: 'prebuild|loader|both',
+    process: (mdxContent, frontMatter) => ({
+      slug: frontMatter.__resourcePath.replace('blog/', '').replace('.mdx', ''),
+    }),
+    // phase: 'prebuild|loader|both',
   },
 })({
   target: 'serverless',

@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { Text } from '@zeit-ui/react'
-import { getSlug } from '../../service/blogManager'
 
 export default function BlogListing({ posts = [] }) {
   if (!posts.length) {
@@ -9,10 +8,10 @@ export default function BlogListing({ posts = [] }) {
 
   return (
     <ul>
-      {posts.map((post) => (
-        <li key={post.__resourcePath}>
-          <Link href={`/blog/${getSlug(post.__resourcePath)}`}>
-            <a>{post.title}</a>
+      {posts.map(({ slug, title }) => (
+        <li key={slug}>
+          <Link href={`/blog/${slug}`}>
+            <a>{title}</a>
           </Link>
         </li>
       ))}
