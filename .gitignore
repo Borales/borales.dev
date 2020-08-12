@@ -1,2 +1,4 @@
 .next
+.mdx-data
 node_modules
+.DS_Store

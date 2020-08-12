@@ -1,0 +1,66 @@
+---
+title: Intro
+publishedAt: '2020-08-12 17:00:00'
+---
+
+import { Display, Divider } from '@zeit-ui/react'
+
+Hi!
+
+I have decided to create my own humble place to start publishing some thoughts to.
+
+"Why not on Medium?" you might ask. Well, for starters:
+
+<Display caption="I don't tweet much, but when I do - I usually complain on something">
+
+https://twitter.com/borales/status/1254091898173743104
+
+</Display>
+
+I've been using Medium for a couple of years now, and it was ok, until one time Medium have introduced paywalls
+and allowed ~~dumb~~ any people (majority of authors) to publish ~~dumb~~ any posts and get money for that
+(like reposting some basic documentation sections for various programming languages), but this isn't the subject of this post.
+
+<Divider />
+
+### Technical details
+
+Main packages:
+
+- [`next.js`](#nextjs)
+- [`next-mdx-enhanced`](https://github.com/hashicorp/next-mdx-enhanced)
+- [`@zeit-ui/react`](https://react.zeit-ui.co/)
+
+#### next.js
+
+I started looking at [nextjs](https://nextjs.org/) simply out of curiosity,
+I really liked the idea of [static site generation](https://nextjs.org/docs/advanced-features/static-html-export).
+In combination with simplified routing - it works kinda well, it helps you to keep your project organized.
+So this site is just an attempt to use next.js more deeply and what it's capable of with some real-life projects (I'll see how it goes).
+
+#### next-mdx-enhanced
+
+The reason I used `next-mdx-enhanced` and not [`with-mdx`](https://github.com/vercel/next.js/tree/canary/examples/with-mdx) is simply
+because the first is much more flexible (mostly for layouts). I spent too much time on `with-mdx` than I should have, while `next-mdx-enhanced`
+began working right out of the box.
+
+#### @zeit-ui/react
+
+This UI package wasn't my first choice, but I decided to go with it because of its clean and neutral design.
+If you think this design looks familiar - you're right, it's used by [vercel.com](https://vercel.com/) site and dashboard.
+
+My two other options were:
+
+- [Material UI](https://material-ui.com/getting-started/installation/)
+- [Primer React](https://primer.style/components/)
+
+Material UI becomes second "Bootstrap" package, and sooner or later every second/third site will look the same with this design.
+
+Primer React (GitHub UI) - turned out it looks great on GitHub itself, but for personal sites - not so much.
+
+In conclusion, I decided to go full-vercel mode with next.js (project of vercel),
+`@zeit-ui/react` (`zeit` is a former name of Vercel) and hosting on [vercel.com](https://vercel.com/).
+
+#### Source code
+
+I don't think anyone would care, but the source code of this site is open-sourced on [GitHub](https://github.com/Borales/borales.dev).
