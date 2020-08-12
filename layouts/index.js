@@ -36,7 +36,11 @@ export default function BlogLayout(frontMatter) {
             <User />
           </Grid>
           <Grid>
-            <Text small style={{ color: 'grey' }}>
+            <Text
+              small
+              title={frontMatter.publishedAt}
+              style={{ color: 'grey' }}
+            >
               <DateFormat date={frontMatter.publishedAt} />
             </Text>
           </Grid>
