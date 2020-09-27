@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Layout from '../components/Layout'
 import DateFormat from '../components/DateFormat'
 import User from '../components/User'
-import { Breadcrumbs, Spacer, Text, Grid, Note } from '@zeit-ui/react'
+import { Breadcrumbs, Spacer, Text, Grid, Note } from '@geist-ui/react'
 
 export default function BlogLayout({ children, frontMatter }) {
   return (

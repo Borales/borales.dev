@@ -3,7 +3,7 @@ import Layout from '../components/Layout'
 import RecentItems from '../components/Blog/RecentItems'
 import User from '../components/User'
 import { sortPosts } from '../service/blogManager'
-import { Text, Card, Spacer, Note, Grid } from '@zeit-ui/react'
+import { Text, Card, Spacer, Note, Grid } from '@geist-ui/react'
 
 import { frontMatter as blogPosts } from './blog/**.mdx'
 

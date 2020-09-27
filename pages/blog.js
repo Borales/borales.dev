@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { Text, Breadcrumbs } from '@zeit-ui/react'
+import { Text, Breadcrumbs } from '@geist-ui/react'
 import Layout from '../components/Layout'
 import Listing from '../components/Blog/Listing'
 import { sortPosts } from '../service/blogManager'

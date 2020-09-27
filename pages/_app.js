@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import Head from 'next/head'
 import Router from 'next/router'
-import { ZeitProvider, CssBaseline } from '@zeit-ui/react'
+import { GeistProvider, CssBaseline } from '@geist-ui/react'
 import * as gtag from '../lib/gtag'
 import './../styles/global.css'
 
@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
   }, [])
 
   return (
-    <ZeitProvider>
+    <GeistProvider>
       <Head>
         <link
           rel="apple-touch-icon"
@@ -40,7 +40,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <CssBaseline />
       <Component {...pageProps} />
-    </ZeitProvider>
+    </GeistProvider>
   )
 }
 export default MyApp

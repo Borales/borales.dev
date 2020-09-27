@@ -1,5 +1,5 @@
 import NextLink from 'next/link'
-import { Text, Card } from '@zeit-ui/react'
+import { Text, Card } from '@geist-ui/react'
 import BlogListing from './Listing'
 
 export default function RecentItems({ recentPosts = [] }) {

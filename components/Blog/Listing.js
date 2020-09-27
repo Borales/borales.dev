@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Text } from '@zeit-ui/react'
+import { Text } from '@geist-ui/react'
 
 export default function BlogListing({ posts = [] }) {
   if (!posts.length) {
