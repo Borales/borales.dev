@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@agentofuser/remark-oembed": "doppelganger9/remark-oembed",
-    "@geist-ui/react": "^2.0.2",
+    "@geist-ui/react": "^2.0.3",
     "@geist-ui/react-icons": "^1.0.0",
     "next": "^9.5.3",
     "next-mdx-enhanced": "^4.0.0",

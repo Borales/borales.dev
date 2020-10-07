@@ -1137,10 +1137,10 @@
   resolved "https://registry.yarnpkg.com/@geist-ui/react-icons/-/react-icons-1.0.0.tgz#2b08f155a0d57549eb8456143e5d51b71b0a11f1"
   integrity sha512-6mNGTLu+EDcyDmf2BLMqKbne3bNX9wbHl4YTSj4nVy4GaMvC8IAIXpxfhdTBBHiTZ1Bm3+9PxQqtyvJvYl0WXQ==
 
-"@geist-ui/react@^2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@geist-ui/react/-/react-2.0.2.tgz#6e786920600afe077dceb3474f4283ceb2050555"
-  integrity sha512-g8rDTc4siR/96bmIbUYaw5+khZ9hn7Eha/PuvtuT61eO7Hg9jBcGIJTw5pn333MF2/bkJy4LKjousgMvOTBaWA==
+"@geist-ui/react@^2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@geist-ui/react/-/react-2.0.3.tgz#a84e5e8d6ee940bf5861287a616cd05ceba5d40a"
+  integrity sha512-lA10sLxb99A98NlOn/+OytImqOzesJg/oGcvVJF0ZOEzuegW4h5K6fO2ikTPeenE8hNqEJ/+eR9VJD5K2hPPYg==
   dependencies:
     styled-jsx "^3.2.5"
 
