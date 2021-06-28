@@ -15,7 +15,7 @@
     "next": "^10.2.3",
     "next-mdx-enhanced": "^4.0.0",
     "react": "^16.14.0",
-    "react-dom": "^16.14.0",
+    "react-dom": "^17.0.2",
     "remark-autolink-headings": "^6.0.1",
     "remark-slug": "^6.0.0"
   },
