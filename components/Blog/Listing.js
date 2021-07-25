@@ -8,7 +8,7 @@ export default function BlogListing({ posts = [] }) {
 
   return (
     <ul>
-      {posts.map(({ slug, title }) => (
+      {posts.map(({ slug, frontmatter: { title } }) => (
         <li key={slug}>
           <Link href={`/blog/${slug}`}>
             <a>{title}</a>

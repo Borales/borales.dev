@@ -2,13 +2,10 @@ import Head from 'next/head'
 import Layout from '../components/Layout'
 import RecentItems from '../components/Blog/RecentItems'
 import User from '../components/User'
-import { sortPosts } from '../service/blogManager'
+import { getRecentPosts } from '../service/blogManager'
 import { Text, Card, Spacer, Note, Grid } from '@geist-ui/react'
 
-import { frontMatter as blogPosts } from './blog/**.mdx'
-
-export default function Home() {
-  const recentPosts = sortPosts(blogPosts).slice(0, 3)
+const Home = ({ recentPosts }) => {
   return (
     <Layout>
       <Head>
@@ -33,3 +30,13 @@ export default function Home() {
     </Layout>
   )
 }
+
+export const getStaticProps = async () => {
+  const recentPosts = getRecentPosts(3)
+
+  return {
+    props: { recentPosts },
+  }
+}
+
+export default Home

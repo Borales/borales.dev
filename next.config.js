@@ -1,45 +1,24 @@
-const withMdxEnhanced = require('next-mdx-enhanced')
-
-module.exports = withMdxEnhanced({
-  layoutPath: 'layouts',
-  defaultLayout: true,
-  fileExtensions: ['mdx'],
-  remarkPlugins: [
-    require('remark-slug'),
-    [
-      require('remark-autolink-headings'),
-      {
-        content: {
-          type: 'text',
-          value: '#',
-        },
-        behavior: 'append',
-      },
-    ],
-    [
-      require('@agentofuser/remark-oembed'),
-      {
-        replaceParent: true,
-      },
-    ],
-  ],
-  rehypePlugins: [],
-  extendFrontMatter: {
-    process: (mdxContent, frontMatter) => ({
-      slug: frontMatter.__resourcePath.replace('blog/', '').replace('.mdx', ''),
-    }),
-    // phase: 'prebuild|loader|both',
-  },
-})({
-  target: 'serverless',
-  webpack: (config, { isServer }) => {
-    // Fixes npm packages that depend on `fs` module
+module.exports = {
+  reactStrictMode: true,
+  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
     if (!isServer) {
-      config.node = {
-        fs: 'empty',
+      // https://github.com/vercel/next.js/issues/7755
+      config.resolve = {
+        ...config.resolve,
+        fallback: {
+          ...config.resolve.fallback,
+          child_process: false,
+          fs: false,
+          dns: false,
+          net: false,
+          tls: false,
+          http2: false,
+          'builtin-modules': false,
+          worker_threads: false,
+        },
       }
     }
 
     return config
   },
-})
+}
