@@ -16,7 +16,7 @@
     "next-mdx-enhanced": "^4.0.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "remark-autolink-headings": "^6.0.1",
+    "remark-autolink-headings": "^6.1.0",
     "remark-slug": "^6.1.0"
   },
   "devDependencies": {
