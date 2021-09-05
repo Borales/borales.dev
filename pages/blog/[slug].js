@@ -53,7 +53,7 @@ const Post = ({ code, frontmatter, slug }) => {
       <DiscussionEmbed
         shortname="borales-blog"
         config={{
-          url: `https://borales.dev/blog/?${slug}`,
+          url: `https://borales.dev/blog/${slug}`,
           identifier: slug,
           title: frontmatter.title,
         }}
