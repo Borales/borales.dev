@@ -3,8 +3,9 @@ import path from 'path'
 import matter from 'gray-matter'
 import { bundleMDX } from 'mdx-bundler'
 import remarkSlug from 'remark-slug'
+import remarkGfm from 'remark-gfm'
 import remarkAutolinkHeadings from 'remark-autolink-headings'
-import remarkOembed from '@agentofuser/remark-oembed'
+import remarkOembed from 'remark-oembed'
 
 process.env.ESBUILD_BINARY_PATH = path.join(
   process.cwd(),
@@ -59,6 +60,8 @@ export const getSinglePost = async (slug) => {
       options.remarkPlugins = [
         ...(options.remarkPlugins ?? []),
         remarkSlug,
+        remarkGfm,
+        remarkOembed({ jsx: true }),
         [
           remarkAutolinkHeadings,
           {
@@ -67,12 +70,6 @@ export const getSinglePost = async (slug) => {
               value: '#',
             },
             behavior: 'append',
-          },
-        ],
-        [
-          remarkOembed,
-          {
-            replaceParent: true,
           },
         ],
       ]

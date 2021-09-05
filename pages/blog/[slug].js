@@ -3,12 +3,13 @@ import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 import Layout from '../../components/Layout'
+import { DiscussionEmbed } from 'disqus-react'
 import DateFormat from '../../components/DateFormat'
 import User from '../../components/User'
 import { getMDXComponent } from 'mdx-bundler/client'
 import { getAllPosts, getSinglePost } from '../../service/blogManager'
 
-const Post = ({ code, frontmatter }) => {
+const Post = ({ code, frontmatter, slug }) => {
   const Component = React.useMemo(() => getMDXComponent(code), [code])
   return (
     <Layout>
@@ -48,6 +49,15 @@ const Post = ({ code, frontmatter }) => {
 
       {frontmatter.summary && <Note label={false}>{frontmatter.summary}</Note>}
       <Component />
+
+      <DiscussionEmbed
+        shortname="borales-blog"
+        config={{
+          url: `https://borales.dev/blog/?${slug}`,
+          identifier: slug,
+          title: frontmatter.title,
+        }}
+      />
     </Layout>
   )
 }
@@ -55,7 +65,7 @@ const Post = ({ code, frontmatter }) => {
 export const getStaticProps = async ({ params }) => {
   const post = await getSinglePost(params.slug)
   return {
-    props: { ...post },
+    props: { ...post, ...params },
   }
 }
 

@@ -5,7 +5,7 @@ import { GeistProvider, CssBaseline } from '@geist-ui/react'
 import * as gtag from '../lib/gtag'
 import './../styles/global.css'
 
-function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps }) {
   useEffect(() => {
     const handleRouteChange = (url) => {
       gtag.pageview(url)
@@ -43,4 +43,3 @@ function MyApp({ Component, pageProps }) {
     </GeistProvider>
   )
 }
-export default MyApp
