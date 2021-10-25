@@ -21,7 +21,7 @@
     "remark-autolink-headings": "^7.0.1",
     "remark-gfm": "^2.0.0",
     "remark-oembed": "^1.2.2",
-    "remark-slug": "^7.0.0"
+    "remark-slug": "^7.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
