@@ -14,7 +14,7 @@
     "disqus-react": "^1.1.2",
     "esbuild": "^0.13.3",
     "gray-matter": "^4.0.3",
-    "mdx-bundler": "^6.0.1",
+    "mdx-bundler": "^7.0.0",
     "next": "^11.1.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
