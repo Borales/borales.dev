@@ -1,3 +1,6 @@
+import createEmotionCache from '@@app/createEmotionCache'
+import theme from '@@app/theme'
+import { GA_TRACKING_ID } from '@@services/gtag'
 import createEmotionServer from '@emotion/server/create-instance'
 import Document, {
   DocumentContext,
@@ -7,9 +10,6 @@ import Document, {
   NextScript,
 } from 'next/document'
 import { Children, Fragment } from 'react'
-import { GA_TRACKING_ID } from '../lib/gtag'
-import createEmotionCache from '../src/createEmotionCache'
-import theme from '../src/theme'
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {

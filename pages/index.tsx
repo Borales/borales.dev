@@ -1,14 +1,14 @@
+import { PostType } from '@@app/types'
+import RecentItems from '@@components/Blog/RecentItems'
+import Layout from '@@components/Layout'
+import User from '@@components/User'
+import apolloClient from '@@services/apolloClient'
 import { gql } from '@apollo/client'
 import Alert from '@mui/material/Alert'
 import Grid from '@mui/material/Grid'
 import Paper from '@mui/material/Paper'
 import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
-import apolloClient from '../src/apolloClient'
-import RecentItems from '../src/components/Blog/RecentItems'
-import Layout from '../src/components/Layout'
-import User from '../src/components/User'
-import { PostType } from '../src/types'
 
 const Home = ({ recentPosts }: { recentPosts: PostType[] }) => {
   return (

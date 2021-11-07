@@ -1,3 +1,5 @@
+import { formatDate } from '@@app/helpers/formatDate'
+import { PostType } from '@@app/types'
 import ArticleIcon from '@mui/icons-material/Article'
 import Avatar from '@mui/material/Avatar'
 import List from '@mui/material/List'
@@ -6,8 +8,6 @@ import ListItemAvatar from '@mui/material/ListItemAvatar'
 import ListItemText from '@mui/material/ListItemText'
 import Typography from '@mui/material/Typography'
 import Link from 'next/link'
-import { PostType } from '../../types'
-import { formatDate } from '../formatDate'
 
 export default function BlogListing({ posts = [] }: { posts: PostType[] }) {
   if (!posts.length) {
@@ -17,7 +17,7 @@ export default function BlogListing({ posts = [] }: { posts: PostType[] }) {
   return (
     <List>
       {posts.map(({ slug, title, date }) => (
-        <Link href={`/blog/${slug}`} passHref key={slug}>
+        <Link href={`/blog/${slug}`} passHref prefetch={false} key={slug}>
           <ListItem button disablePadding component={'a'}>
             <ListItemAvatar>
               <Avatar variant="rounded" sx={{ bgcolor: 'primary.main' }}>

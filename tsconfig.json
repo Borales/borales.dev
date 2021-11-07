@@ -15,11 +15,17 @@
     "sourceMap": true,
     "strict": true,
     "target": "esnext",
+    "baseUrl": "./",
     "incremental": true,
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
     "resolveJsonModule": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "paths": {
+      "@@app/*": ["src/*"],
+      "@@components/*": ["src/components/*"],
+      "@@services/*": ["src/services/*"]
+    }
   },
   "exclude": ["node_modules"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]

@@ -1,12 +1,12 @@
+import { PostType } from '@@app/types'
+import Listing from '@@components/Blog/Listing'
+import Layout from '@@components/Layout'
+import Link from '@@components/Link'
+import apolloClient from '@@services/apolloClient'
 import { gql } from '@apollo/client'
 import Breadcrumbs from '@mui/material/Breadcrumbs'
 import Typography from '@mui/material/Typography'
 import Head from 'next/head'
-import apolloClient from '../../src/apolloClient'
-import Listing from '../../src/components/Blog/Listing'
-import Layout from '../../src/components/Layout'
-import Link from '../../src/components/Link'
-import { PostType } from '../../src/types'
 
 const Blog = ({ posts }: { posts: PostType[] }) => {
   return (

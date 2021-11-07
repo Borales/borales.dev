@@ -1,3 +1,6 @@
+import createEmotionCache from '@@app/createEmotionCache'
+import theme from '@@app/theme'
+import { pageview } from '@@services/gtag'
 import { CacheProvider, EmotionCache } from '@emotion/react'
 import CssBaseline from '@mui/material/CssBaseline'
 import { ThemeProvider } from '@mui/material/styles'
@@ -5,9 +8,6 @@ import { AppProps } from 'next/app'
 import Head from 'next/head'
 import Router from 'next/router'
 import { useEffect } from 'react'
-import { pageview } from '../lib/gtag'
-import createEmotionCache from '../src/createEmotionCache'
-import theme from '../src/theme'
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache()

@@ -1,10 +1,10 @@
+import { PostType } from '@@app/types'
 import Button from '@mui/material/Button'
 import Card from '@mui/material/Card'
 import CardActions from '@mui/material/CardActions'
 import CardContent from '@mui/material/CardContent'
 import Typography from '@mui/material/Typography'
 import NextLink from 'next/link'
-import { PostType } from '../../types'
 import BlogListing from './Listing'
 
 export default function RecentItems({
@@ -33,7 +33,7 @@ export default function RecentItems({
         <BlogListing posts={recentPosts} />
       </CardContent>
       <CardActions>
-        <NextLink href="/blog" passHref>
+        <NextLink href="/blog" passHref prefetch={false}>
           <Button>All blog posts &rarr;</Button>
         </NextLink>
       </CardActions>
