@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 module.exports = {
   reactStrictMode: true,
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
