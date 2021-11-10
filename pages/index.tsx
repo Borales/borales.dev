@@ -48,7 +48,7 @@ export const getStaticProps = async () => {
   const recentPosts = await apolloClient.query<{ posts: PostType[] }>({
     query: gql`
       query RecentPosts($limit: Int) {
-        posts(first: $limit, orderBy: date_DESC) {
+        posts(first: $limit, orderBy: date_DESC, stage: PUBLISHED) {
           slug
           title
           date

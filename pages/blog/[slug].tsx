@@ -109,7 +109,7 @@ export const getStaticProps: GetStaticProps<
   const { data } = await apolloClient.query<{ post: PostType }>({
     query: gql`
       query Post($slug: String!) {
-        post(where: { slug: $slug }) {
+        post(where: { slug: $slug }, stage: PUBLISHED) {
           title
           date
           slug
@@ -144,7 +144,7 @@ export const getStaticPaths: GetStaticPaths<Pick<PostType, 'slug'>> =
       {
         query: gql`
           query AllPosts {
-            posts {
+            posts(stage: PUBLISHED) {
               slug
             }
           }
