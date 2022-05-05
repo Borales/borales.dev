@@ -17,7 +17,7 @@ process.env.ESBUILD_BINARY_PATH = path.join(
 export const parseContent = async (content: string) => {
   const { code } = await bundleMDX({
     source: content,
-    xdmOptions(options) {
+    mdxOptions(options) {
       options.remarkPlugins = [
         ...(options.remarkPlugins ?? []),
         [

@@ -23,10 +23,10 @@
     "dotenv": "^16.0.0",
     "esbuild": "^0.14.38",
     "graphql": "^16.4.0",
-    "mdx-bundler": "^8.0.1",
+    "mdx-bundler": "^9.0.0",
     "next": "^12.1.6",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
     "remark-autolink-headings": "^7.0.1",
     "remark-gfm": "^3.0.1",
     "remark-slug": "^7.0.1"
