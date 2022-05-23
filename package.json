@@ -16,7 +16,7 @@
     "@emotion/server": "^11.4.0",
     "@emotion/styled": "^11.8.1",
     "@mui/icons-material": "^5.8.0",
-    "@mui/material": "^5.8.0",
+    "@mui/material": "^5.8.1",
     "@remark-embedder/core": "^2.0.0",
     "@remark-embedder/transformer-oembed": "^2.0.0",
     "disqus-react": "^1.1.3",
