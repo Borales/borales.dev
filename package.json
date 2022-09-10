@@ -24,7 +24,7 @@
     "esbuild": "^0.14.54",
     "graphql": "^16.6.0",
     "mdx-bundler": "^9.0.1",
-    "next": "^12.2.5",
+    "next": "^12.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "remark-autolink-headings": "^7.0.1",
