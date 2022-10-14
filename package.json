@@ -19,7 +19,7 @@
     "@mui/material": "^5.10.9",
     "@remark-embedder/core": "^3.0.1",
     "@remark-embedder/transformer-oembed": "^3.0.0",
-    "disqus-react": "^1.1.4",
+    "disqus-react": "^1.1.5",
     "dotenv": "^16.0.3",
     "esbuild": "^0.15.10",
     "graphql": "^16.6.0",
