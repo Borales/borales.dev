@@ -4,6 +4,7 @@
     "config:base",
     "schedule:daily",
     "group:apolloclientMonorepo",
+    "group:definitelyTyped",
     "group:emotionMonorepo",
     "group:material-uiMonorepo",
     "group:nextjsMonorepo",
