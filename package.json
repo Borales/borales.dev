@@ -11,10 +11,10 @@
   },
   "dependencies": {
     "@apollo/client": "^3.7.12",
-    "@emotion/cache": "^11.10.7",
-    "@emotion/react": "^11.10.6",
+    "@emotion/cache": "^11.10.8",
+    "@emotion/react": "^11.10.8",
     "@emotion/server": "^11.10.0",
-    "@emotion/styled": "^11.10.6",
+    "@emotion/styled": "^11.10.8",
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.12.1",
     "@remark-embedder/core": "^3.0.1",
