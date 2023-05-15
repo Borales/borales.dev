@@ -21,7 +21,7 @@
     "@remark-embedder/transformer-oembed": "^3.0.0",
     "disqus-react": "^1.1.5",
     "dotenv": "^16.0.3",
-    "esbuild": "^0.17.18",
+    "esbuild": "^0.17.19",
     "graphql": "^16.6.0",
     "mdx-bundler": "^9.2.1",
     "next": "^12.3.4",
