@@ -12,7 +12,7 @@
   "dependencies": {
     "@apollo/client": "^3.7.15",
     "@emotion/cache": "^11.11.0",
-    "@emotion/react": "^11.11.0",
+    "@emotion/react": "^11.11.1",
     "@emotion/server": "^11.11.0",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.11.16",
