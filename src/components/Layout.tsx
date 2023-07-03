@@ -1,4 +1,4 @@
-import Container from '@mui/material/Container'
+import { Container } from '@mui/material'
 import { PropsWithChildren } from 'react'
 
 export default function Layout({ children }: PropsWithChildren<{}>) {

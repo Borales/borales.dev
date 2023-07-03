@@ -8,13 +8,8 @@ export type GAEvent = {
 }
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/pages
-export const pageview = (url: string) => {
-  if (!GA_TRACKING_ID) {
-    return
-  }
-  window.gtag('config', GA_TRACKING_ID, {
-    page_path: url,
-  })
+export const pageview = (url: string, code: string) => {
+  code && window.gtag('config', code, { page_path: url })
 }
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/events
