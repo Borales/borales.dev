@@ -14,7 +14,7 @@ export default function Analytics({ code }: { code: string }) {
       Array.from(searchParams.entries()).length > 0 ? '?' : ''
     }${searchParams}`
     pageview(url, code)
-  }, [pathname, searchParams])
+  }, [code, pathname, searchParams])
 
   return (
     <>

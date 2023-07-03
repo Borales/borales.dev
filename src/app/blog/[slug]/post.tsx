@@ -28,7 +28,12 @@ const components: MDXRemoteProps['components'] = {
     <Typography {...props} variant="h4" component="h3" fontWeight="bold" />
   ),
   h4: (props) => (
-    <Typography {...props} variant="h5" component="h4" fontWeight="bold" />
+    <Typography
+      {...(props as any)}
+      variant="h5"
+      component="h4"
+      fontWeight="bold"
+    />
   ),
   a: (props) => (
     <Link href={props!.href} underline="hover">
