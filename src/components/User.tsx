@@ -1,8 +1,4 @@
-import Avatar from '@mui/material/Avatar'
-import Badge from '@mui/material/Badge'
-import Grid from '@mui/material/Grid'
-import Stack from '@mui/material/Stack'
-import Link from './Link'
+import { Avatar, Badge, Grid, Link, Stack } from '@mui/material'
 
 export default function User() {
   return (

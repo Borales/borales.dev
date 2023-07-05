@@ -10,21 +10,22 @@
     "start": "next start"
   },
   "dependencies": {
-    "@apollo/client": "^3.7.16",
+    "@apollo/client": "^3.8.0-beta.5",
+    "@apollo/experimental-nextjs-app-support": "^0.3.2",
     "@emotion/cache": "^11.11.0",
     "@emotion/react": "^11.11.1",
     "@emotion/server": "^11.11.0",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.11.16",
-    "@mui/material": "^5.13.5",
+    "@mui/material": "^5.13.6",
     "@remark-embedder/core": "^3.0.1",
     "@remark-embedder/transformer-oembed": "^3.0.0",
     "disqus-react": "^1.1.5",
     "dotenv": "^16.3.1",
-    "esbuild": "^0.18.10",
+    "esbuild": "^0.18.11",
     "graphql": "^16.7.1",
-    "mdx-bundler": "^9.2.1",
-    "next": "^12.3.4",
+    "next": "^13.4.8",
+    "next-mdx-remote": "^4.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "remark-autolink-headings": "^7.0.1",
@@ -33,14 +34,15 @@
   },
   "devDependencies": {
     "@types/gtag.js": "^0.0.12",
-    "@types/node": "^18.16.18",
+    "@types/node": "^18.16.19",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
-    "eslint": "^8.43.0",
-    "eslint-config-next": "^12.3.4",
+    "bluebird": "^3.7.2",
+    "eslint": "^8.44.0",
+    "eslint-config-next": "^13.4.8",
     "prettier": "^2.8.8",
     "prettier-plugin-organize-imports": "^3.2.2",
     "prettier-plugin-package": "^1.3.1",
-    "typescript": "^5.1.3"
+    "typescript": "^5.1.6"
   }
 }
