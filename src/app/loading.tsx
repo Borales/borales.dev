@@ -2,16 +2,7 @@
 
 import Layout from '@@components/Layout'
 import User from '@@components/User'
-import {
-  Alert,
-  Card,
-  CardContent,
-  CircularProgress,
-  Grid,
-  Paper,
-  Stack,
-  Typography,
-} from '@mui/material'
+import { Alert, Grid, Paper, Skeleton, Stack, Typography } from '@mui/material'
 
 export default function HomeLoading() {
   return (
@@ -37,22 +28,7 @@ export default function HomeLoading() {
           </Grid>
         </Grid>
 
-        <Card
-          raised
-          sx={{
-            boxShadow: 5,
-            ':hover': {
-              boxShadow: 10,
-            },
-          }}
-        >
-          <CardContent>
-            <Typography variant="h5" fontWeight="bold" component="h3">
-              My recent blog posts
-            </Typography>
-            <CircularProgress />
-          </CardContent>
-        </Card>
+        <Skeleton variant="rectangular" height={300} />
 
         <Paper variant="outlined">
           <Alert severity="warning">Apologies, the page is in progress!</Alert>
