@@ -608,10 +608,10 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.8.tgz#6b79032e760a0899cd4204710beede972a3a185f"
   integrity sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==
 
-"@remark-embedder/core@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@remark-embedder/core/-/core-3.0.1.tgz#91d1c33cd87bcfb3c1d761952570b1f12d20de8c"
-  integrity sha512-Ls7ttcZltOIIPwbss04GV1PZFOWM4892MllffXr1YWOH7zsCexX2stj/bznApMQWuqlWgB0G5i7FMPWZPzwztg==
+"@remark-embedder/core@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@remark-embedder/core/-/core-3.0.2.tgz#a969e4515132fdce3c5954f2dc000256848547f5"
+  integrity sha512-E+nmYJHh5yRptPH6MFzxyzKoeAuG12rjAl+x0sIcyDxy8L9Dymec8QZoX75J1aaigKyStURhtW7trZwFtHoN0Q==
   dependencies:
     "@babel/runtime" "^7.18.9"
     "@types/hast" "^2.3.4"
