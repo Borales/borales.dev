@@ -22,7 +22,7 @@
     "@remark-embedder/transformer-oembed": "^3.0.0",
     "disqus-react": "^1.1.5",
     "dotenv": "^16.3.1",
-    "esbuild": "^0.18.14",
+    "esbuild": "^0.18.16",
     "graphql": "^16.7.1",
     "next": "^13.4.10",
     "next-mdx-remote": "^4.4.1",
