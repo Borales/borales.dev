@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@types/gtag.js": "^0.0.13",
-    "@types/node": "^18.17.8",
+    "@types/node": "^18.17.11",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
     "bluebird": "^3.7.2",
