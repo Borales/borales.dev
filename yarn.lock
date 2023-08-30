@@ -7,10 +7,10 @@
   resolved "https://registry.yarnpkg.com/@aashutoshrathi/word-wrap/-/word-wrap-1.2.6.tgz#bd9154aec9983f77b3a034ecaa015c2e4201f6cf"
   integrity sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==
 
-"@apollo/client@^3.8.0-beta.6":
-  version "3.8.0-beta.6"
-  resolved "https://registry.yarnpkg.com/@apollo/client/-/client-3.8.0-beta.6.tgz#ad6b477a7285ec707f07e4428815de10280274fa"
-  integrity sha512-2kZMLz1Tt41t1kwaLtpNOaPXO0lGPGwXFnqa+3U5E3jLzkEKEF1MZ+NOOFcm6ZY832+6FZ13tP61PItZqDFCAw==
+"@apollo/client@^3.8.1":
+  version "3.8.1"
+  resolved "https://registry.yarnpkg.com/@apollo/client/-/client-3.8.1.tgz#a1e3045a5fb276c08e38f7b5f930551d79741257"
+  integrity sha512-JGGj/9bdoLEqzatRikDeN8etseY5qeFAY0vSAx/Pd0ePNsaflKzHx6V2NZ0NsGkInq+9IXXX3RLVDf0EotizMA==
   dependencies:
     "@graphql-typed-document-node/core" "^3.1.1"
     "@wry/context" "^0.7.3"
@@ -18,7 +18,7 @@
     "@wry/trie" "^0.4.3"
     graphql-tag "^2.12.6"
     hoist-non-react-statics "^3.3.2"
-    optimism "^0.17.4"
+    optimism "^0.17.5"
     prop-types "^15.7.2"
     response-iterator "^0.2.6"
     symbol-observable "^4.0.0"
@@ -3524,7 +3524,7 @@ open@^9.1.0:
     is-inside-container "^1.0.0"
     is-wsl "^2.2.0"
 
-optimism@^0.17.4:
+optimism@^0.17.5:
   version "0.17.5"
   resolved "https://registry.yarnpkg.com/optimism/-/optimism-0.17.5.tgz#a4c78b3ad12c58623abedbebb4f2f2c19b8e8816"
   integrity sha512-TEcp8ZwK1RczmvMnvktxHSF2tKgMWjJ71xEFGX5ApLh67VsMSTy1ZUlipJw8W+KaqgOmQ+4pqwkeivY89j+4Vw==
