@@ -10,7 +10,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@apollo/client": "^3.8.2",
+    "@apollo/client": "^3.8.3",
     "@apollo/experimental-nextjs-app-support": "^0.3.2",
     "@emotion/cache": "^11.11.0",
     "@emotion/react": "^11.11.1",
