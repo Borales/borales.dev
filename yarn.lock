@@ -705,10 +705,10 @@
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-1.0.1.tgz#aa22750962f3bf0e79d753d3cc067f010c95f194"
   integrity sha512-LG4opVs2ANWZ1TJoKc937iMmNstM/d0ae1vNbnBvBhqCSezgVUOzcLCqbI5elV8Vy6WKwKjaqR+zO9VKirBBCA==
 
-"@types/gtag.js@^0.0.13":
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@types/gtag.js/-/gtag.js-0.0.13.tgz#54d746635e09fa61242e05b574b1ac068e6a90dd"
-  integrity sha512-yOXFkfnt1DQr1v9B4ERulJOGnbdVqnPHV8NG4nkQhnu4qbrJecQ06DlaKmSjI3nzIwBj5U9/X61LY4sTc2KbaQ==
+"@types/gtag.js@^0.0.14":
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/@types/gtag.js/-/gtag.js-0.0.14.tgz#e19f5c310400907ed6f3cbbf00bb5e9f2b6f12f6"
+  integrity sha512-NcR9rf3B93ie5T086NIpXGTtoIJeOeQ14+IBIBwfNBztb175e/0gONc60ywUU4+f9dwctgz9L3I4h5Gs/hl31g==
 
 "@types/hast@^2.0.0", "@types/hast@^2.3.2", "@types/hast@^2.3.4":
   version "2.3.4"
@@ -761,10 +761,10 @@
     "@types/node" "*"
     form-data "^3.0.0"
 
-"@types/node@*", "@types/node@^18.17.17":
-  version "18.17.17"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.17.17.tgz#53cc07ce582c9d7c5850702a3c2cb0af0d7b0ca1"
-  integrity sha512-cOxcXsQ2sxiwkykdJqvyFS+MLQPLvIdwh5l6gNg8qF6s+C7XSkEWOZjK+XhUZd+mYvHV/180g2cnCcIl4l06Pw==
+"@types/node@*", "@types/node@^18.17.18":
+  version "18.17.18"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.17.18.tgz#acae19ad9011a2ab3d792232501c95085ba1838f"
+  integrity sha512-/4QOuy3ZpV7Ya1GTRz5CYSz3DgkKpyUptXuQ5PPce7uuyJAOR7r9FhkmxJfvcNUXyklbC63a+YvB3jxy7s9ngw==
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
