@@ -4,15 +4,14 @@ require('dotenv').config()
 const nextConfig = {
   reactStrictMode: false,
   swcMinify: true,
-  modularizeImports: {
-    '@mui/icons-material': {
-      transform: '@mui/icons-material/{{member}}',
-    },
-    '@mui/material': {
-      transform: '@mui/material/{{member}}',
-      preventFullImport: true,
-    },
-  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'avatars2.githubusercontent.com'
+      }
+    ]
+  }
 }
 
 module.exports = nextConfig

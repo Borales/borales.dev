@@ -1,36 +1,21 @@
 'use client'
 
-import Link from '@@app/components/Link'
-import Layout from '@@components/Layout'
 import User from '@@components/User'
-import { Breadcrumbs, CircularProgress, Grid, Typography } from '@mui/material'
+import { Breadcrumbs } from './breadcrumbs'
+import { Spinner } from '@nextui-org/spinner'
 
 export default function BlogPostLoading() {
   return (
-    <Layout>
-      <Breadcrumbs>
-        <Link href="/" underline="hover">
-          Home
-        </Link>
-        <Link href="/blog" underline="hover">
-          Blog
-        </Link>
-        <Typography>Loading ...</Typography>
-      </Breadcrumbs>
-      <Typography variant="h3" fontWeight="bold" component="h1">
-        Loading ...
-      </Typography>
+    <>
+      <Breadcrumbs />
+      <h1>Loading...</h1>
 
-      <Grid container alignContent="center" justifyContent="space-between">
-        <Grid item>
-          <User />
-        </Grid>
-        <Grid item>
-          <CircularProgress />
-        </Grid>
-      </Grid>
+      <div className="flex place-content-between">
+        <User />
+        <Spinner />
+      </div>
 
-      <CircularProgress />
-    </Layout>
+      <Spinner />
+    </>
   )
 }

@@ -1,39 +1,25 @@
 'use client'
 
-import Layout from '@@components/Layout'
+import { Skeleton } from '@nextui-org/skeleton'
+import NameTag from '@@app/components/NameTag'
+import { ExclamationTriangleIcon as WarningIcon } from '@heroicons/react/24/outline'
+import { Alert } from '@@app/components/elements/Alert'
 import User from '@@components/User'
-import { Alert, Grid, Paper, Skeleton, Stack, Typography } from '@mui/material'
 
 export default function HomeLoading() {
   return (
-    <Layout>
-      <Stack spacing={3}>
-        <Grid container justifyContent="space-between" alignContent="center">
-          <Grid item>
-            <Typography variant="h2" component="h1" fontWeight="bold">
-              &lt;
-              <Typography
-                component="span"
-                variant="h2"
-                fontWeight="bold"
-                color="primary.main"
-              >
-                Borales
-              </Typography>{' '}
-              /&gt;
-            </Typography>
-          </Grid>
-          <Grid item>
-            <User />
-          </Grid>
-        </Grid>
+    <>
+      <header className="flex justify-between content-center">
+        <NameTag />
+        <User />
+      </header>
 
-        <Skeleton variant="rectangular" height={300} />
+      <Skeleton className="h-80 rounded-md" />
 
-        <Paper variant="outlined">
-          <Alert severity="warning">Apologies, the page is in progress!</Alert>
-        </Paper>
-      </Stack>
-    </Layout>
+      <Alert>
+        <WarningIcon className="inline aspect-square w-6 text-warning-500 mr-2" />
+        Apologies, the page is in progress!
+      </Alert>
+    </>
   )
 }

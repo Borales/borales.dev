@@ -25,14 +25,14 @@ const allPostsQuery = gql`
 export const getLastPosts = async (limit: number = 5) => {
   const { data } = await getClient().query<{ posts: PostType[] }>({
     query: recentPostsQuery,
-    variables: { limit },
+    variables: { limit }
   })
   return data.posts
 }
 
 export const getAllPosts = async () => {
   const { data } = await getClient().query<{ posts: PostType[] }>({
-    query: allPostsQuery,
+    query: allPostsQuery
   })
   return data.posts
 }

@@ -1,41 +1,26 @@
 'use client'
 
-import RecentItems from '@@app/components/Blog/RecentItems'
 import { PostType } from '@@app/types'
-import Layout from '@@components/Layout'
+import { ExclamationTriangleIcon as WarningIcon } from '@heroicons/react/24/outline'
 import User from '@@components/User'
-import { Alert, Grid, Paper, Stack, Typography } from '@mui/material'
+import NameTag from '@@components/NameTag'
+import RecentItems from '@@components/Blog/RecentItems'
+import { Alert } from '@@app/components/elements/Alert'
 
 export default function HomeContent({ posts }: { posts: PostType[] }) {
   return (
-    <Layout>
-      <Stack spacing={3}>
-        <Grid container justifyContent="space-between" alignContent="center">
-          <Grid item>
-            <Typography variant="h2" component="h1" fontWeight="bold">
-              &lt;
-              <Typography
-                component="span"
-                variant="h2"
-                fontWeight="bold"
-                color="primary.main"
-              >
-                Borales
-              </Typography>{' '}
-              /&gt;
-            </Typography>
-          </Grid>
-          <Grid item>
-            <User />
-          </Grid>
-        </Grid>
+    <>
+      <header className="flex justify-between content-center">
+        <NameTag />
+        <User />
+      </header>
 
-        <RecentItems recentPosts={posts} />
+      <RecentItems recentPosts={posts} />
 
-        <Paper variant="outlined">
-          <Alert severity="warning">Apologies, the page is in progress!</Alert>
-        </Paper>
-      </Stack>
-    </Layout>
+      <Alert>
+        <WarningIcon className="inline aspect-square w-6 text-warning-500 mr-2" />
+        Apologies, the page is in progress!
+      </Alert>
+    </>
   )
 }

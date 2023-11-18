@@ -1,11 +1,7 @@
 export const metadata = {
-  title: 'Blog | borales.dev',
+  title: 'Blog | borales.dev'
 }
 
-export default function BlogLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function BlogLayout({ children }: { children: React.ReactNode }) {
   return <>{children}</>
 }
