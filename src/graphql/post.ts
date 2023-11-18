@@ -16,7 +16,7 @@ const query = gql`
 export const getPost = async (slug: string): Promise<PostType> => {
   const { data } = await getClient().query<{ post: PostType }>({
     query,
-    variables: { slug },
+    variables: { slug }
   })
   return data.post
 }

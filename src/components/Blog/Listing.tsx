@@ -1,36 +1,29 @@
 import { formatDate } from '@@app/helpers/formatDate'
 import { PostType } from '@@app/types'
-import ArticleIcon from '@mui/icons-material/Article'
-import {
-  Avatar,
-  List,
-  ListItemAvatar,
-  ListItemButton,
-  ListItemText,
-  Typography,
-} from '@mui/material'
+import { BookOpenIcon } from '@heroicons/react/24/outline'
+import { Listbox, ListboxItem } from '@nextui-org/listbox'
 
 export default function BlogListing({ posts = [] }: { posts: PostType[] }) {
   if (!posts.length) {
-    return <Typography variant="h3">No posts</Typography>
+    return <h3>No posts</h3>
   }
 
   return (
-    <List>
-      {posts.map(({ slug, title, date }) => (
-        <ListItemButton
+    <Listbox aria-label="Blog listing" items={posts}>
+      {({ slug, title, date }) => (
+        <ListboxItem
           href={`/blog/${slug}`}
           key={slug}
-          style={{ padding: 0 }}
+          variant="flat"
+          textValue={slug}
+          startContent={<BookOpenIcon className="aspect-square w-10 text-secondary" />}
         >
-          <ListItemAvatar>
-            <Avatar variant="rounded" sx={{ bgcolor: 'primary.main' }}>
-              <ArticleIcon fontSize="small" />
-            </Avatar>
-          </ListItemAvatar>
-          <ListItemText primary={title} secondary={`on ${formatDate(date)}`} />
-        </ListItemButton>
-      ))}
-    </List>
+          <div className="flex flex-col ml-1">
+            <span>{title}</span>
+            <span className="text-tiny text-default-400">on {formatDate(date)}</span>
+          </div>
+        </ListboxItem>
+      )}
+    </Listbox>
   )
 }

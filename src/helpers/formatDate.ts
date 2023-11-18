@@ -3,7 +3,7 @@ export const formatDate = (date: string) => {
   const dateTimeFormat = new Intl.DateTimeFormat('en', {
     year: 'numeric',
     month: 'long',
-    day: '2-digit',
+    day: '2-digit'
   })
 
   return dateTimeFormat.format(d)

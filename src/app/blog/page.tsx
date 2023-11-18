@@ -5,6 +5,7 @@ import { getAllPosts } from '@@app/graphql/posts'
 import BlogContent from './blog'
 
 export default async function Blog() {
+  'use server'
   const posts = await getAllPosts()
 
   return <BlogContent posts={posts} />

@@ -1,52 +1,29 @@
 'use client'
 
-import Link from '@@app/components/Link'
-import Layout from '@@components/Layout'
 import User from '@@components/User'
-import { Breadcrumbs, GlobalStyles, Grid, Typography } from '@mui/material'
 import { DiscussionEmbed } from 'disqus-react'
 import { MDXRemote, MDXRemoteProps } from 'next-mdx-remote'
-
-const postGlobalStyles = (
-  <GlobalStyles
-    styles={{
-      'h1 > a, h2 > a, h3 > a, h4 > a, h5 > a,h6 > a': {
-        display: 'none',
-        paddingLeft: '8px',
-      },
-
-      'h1:hover > a, h2:hover > a, h3:hover > a, h4:hover > a, h5:hover > a, h6:hover > a':
-        {
-          display: 'inline',
-        },
-    }}
-  />
-)
+import { Breadcrumbs } from './breadcrumbs'
+import { Link } from '@@components/elements/Link'
+import './styles.css'
 
 const components: MDXRemoteProps['components'] = {
-  h3: (props: any) => (
-    <Typography {...props} variant="h4" component="h3" fontWeight="bold" />
-  ),
-  h4: (props) => (
-    <Typography
-      {...(props as any)}
-      variant="h5"
-      component="h4"
-      fontWeight="bold"
-    />
-  ),
+  h2: (props) => <h2 className="[&>a]:hidden [&>a]:pl-2" {...props} />,
+  h3: (props: any) => <h3 className="[&>a]:hidden [&>a]:pl-2" {...props} />,
+  h4: (props) => <h4 className="[&>a]:hidden [&>a]:pl-2" {...props} />,
+  h5: (props) => <h5 className="[&>a]:hidden [&>a]:pl-2" {...props} />,
   a: (props) => (
-    <Link href={props!.href} underline="hover">
+    <Link href={props!.href} color="secondary" underline="hover">
       {props.children}
     </Link>
-  ),
+  )
 }
 
 export default function BlogPostContent({
   slug,
   content,
   title,
-  date,
+  date
 }: {
   slug: string
   content: any
@@ -54,31 +31,14 @@ export default function BlogPostContent({
   date: string
 }) {
   return (
-    <Layout>
-      {postGlobalStyles}
-      <Breadcrumbs>
-        <Link href="/" underline="hover">
-          Home
-        </Link>
-        <Link href="/blog" underline="hover">
-          Blog
-        </Link>
-        <Typography>{title}</Typography>
-      </Breadcrumbs>
-      <Typography variant="h3" fontWeight="bold" component="h1">
-        {title}
-      </Typography>
+    <>
+      <Breadcrumbs active={title} />
+      <h1>{title}</h1>
 
-      <Grid container alignContent="center" justifyContent="space-between">
-        <Grid item>
-          <User />
-        </Grid>
-        <Grid item>
-          <Typography variant="subtitle2" color="primary.light">
-            {date}
-          </Typography>
-        </Grid>
-      </Grid>
+      <div className="flex place-content-between">
+        <User />
+        <span className="text-xs text-secondary">{date}</span>
+      </div>
 
       <MDXRemote {...content} components={components} />
 
@@ -87,9 +47,9 @@ export default function BlogPostContent({
         config={{
           url: `https://borales.dev/blog/${slug}`,
           identifier: slug,
-          title,
+          title
         }}
       />
-    </Layout>
+    </>
   )
 }

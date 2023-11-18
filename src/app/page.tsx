@@ -5,6 +5,7 @@ import { getLastPosts } from '@@app/graphql/posts'
 import HomeContent from './home'
 
 export default async function Home() {
+  'use server'
   const posts = await getLastPosts()
 
   return <HomeContent posts={posts} />

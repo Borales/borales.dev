@@ -14,11 +14,8 @@ export async function generateStaticParams() {
   return posts.map(({ slug }) => ({ slug }))
 }
 
-export default async function BlogPost({
-  params,
-}: {
-  params: { slug: string }
-}) {
+export default async function BlogPost({ params }: { params: { slug: string } }) {
+  'use server'
   const post = await getPost(params.slug)
 
   if (!post) {
