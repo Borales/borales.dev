@@ -1,5 +1,3 @@
-import { Breadcrumbs } from './breadcrumbs'
-
 export const metadata = {
   title: 'Blog | borales.dev'
 }
