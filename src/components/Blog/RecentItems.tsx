@@ -1,7 +1,7 @@
 import { PostType } from '@@app/types'
-import { Card, CardHeader, CardBody, CardFooter } from '@nextui-org/card'
-import BlogListing from './Listing'
+import { Card, CardBody, CardFooter, CardHeader } from '@nextui-org/card'
 import { Link } from '../elements/Link'
+import BlogListing from './Listing'
 
 export default function RecentItems({ recentPosts = [] }: { recentPosts: PostType[] }) {
   if (!recentPosts.length) {

@@ -1,10 +1,10 @@
 'use client'
 
 import User from '@@components/User'
+import { Link } from '@@components/elements/Link'
 import { DiscussionEmbed } from 'disqus-react'
 import { MDXRemote, MDXRemoteProps } from 'next-mdx-remote'
 import { Breadcrumbs } from './breadcrumbs'
-import { Link } from '@@components/elements/Link'
 import './styles.css'
 
 const components: MDXRemoteProps['components'] = {

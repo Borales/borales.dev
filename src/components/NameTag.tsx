@@ -1,10 +1,8 @@
-import * as React from 'react'
-
 export default function NameTag() {
   return (
-    <div className="font-bold text-6xl">
+    <div className="text-6xl font-bold">
       &lt;
-      <span className="text-secondary font-bold">Borales</span> /&gt;
+      <span className="font-bold text-secondary">Borales</span> /&gt;
     </div>
   )
 }

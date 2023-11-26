@@ -1,8 +1,8 @@
 'use client'
 
 import User from '@@components/User'
-import { Breadcrumbs } from './breadcrumbs'
 import { Spinner } from '@nextui-org/spinner'
+import { Breadcrumbs } from './breadcrumbs'
 
 export default function BlogPostLoading() {
   return (

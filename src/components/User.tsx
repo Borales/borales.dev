@@ -1,6 +1,5 @@
-import * as React from 'react'
-import { Avatar } from '@nextui-org/avatar'
 import { Link } from '@@components/elements/Link'
+import { Avatar } from '@nextui-org/avatar'
 import Image from 'next/image'
 
 export default function User() {
@@ -20,7 +19,7 @@ export default function User() {
           target="_blank"
           size="sm"
           color="secondary"
-          className="decoration-dashed decoration-secondary"
+          className="decoration-secondary decoration-dashed"
           underline="hover"
           isExternal
         >

@@ -1,6 +1,6 @@
 'use client'
 
-import { Breadcrumbs as NextBreadcrumbs, BreadcrumbItem } from '@nextui-org/breadcrumbs'
+import { BreadcrumbItem, Breadcrumbs as NextBreadcrumbs } from '@nextui-org/breadcrumbs'
 
 type BreadcrumbsProps = {
   active?: string

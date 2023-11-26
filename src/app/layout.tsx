@@ -1,10 +1,10 @@
 import Analytics from '@@components/Analytics'
 import { GA_TRACKING_ID } from '@@services/gtag'
-import * as React from 'react'
-import './globals.css'
 import type { Metadata, Viewport } from 'next'
-import { Providers } from './providers'
+import * as React from 'react'
 import font from '../font'
+import './globals.css'
+import { Providers } from './providers'
 
 export const viewport: Viewport = {
   colorScheme: 'light dark',
@@ -48,7 +48,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body
-        className={`${font.className} text-foreground bg-background antialiased min-h-screen container mx-auto py-12 px-6`}
+        className={`${font.className} container mx-auto min-h-screen bg-background px-6 py-12 text-foreground antialiased`}
       >
         {GA_TRACKING_ID && <Analytics code={GA_TRACKING_ID} />}
         <Providers>
