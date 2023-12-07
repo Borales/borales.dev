@@ -1,4 +1,3 @@
-// Fonts Example
 import { Roboto } from 'next/font/google'
 
 const GoogleFont = Roboto({

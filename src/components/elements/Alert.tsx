@@ -17,6 +17,6 @@ type AlertVariants = VariantProps<typeof variants> & {
   children: React.ReactNode
 }
 
-export const Alert = ({ children }: AlertVariants) => {
-  return <div className={variants()}>{children}</div>
+export const Alert = ({ children, color }: AlertVariants) => {
+  return <div className={variants({ color })}>{children}</div>
 }
