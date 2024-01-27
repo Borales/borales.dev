@@ -21,7 +21,7 @@
     "disqus-react": "^1.1.5",
     "dotenv": "^16.4.1",
     "framer-motion": "^10.18.0",
-    "esbuild": "^0.19.11",
+    "esbuild": "^0.20.0",
     "graphql": "^16.8.1",
     "next": "^14.0.4",
     "next-mdx-remote": "^4.4.1",
