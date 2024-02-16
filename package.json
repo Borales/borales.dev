@@ -19,7 +19,7 @@
     "@nextui-org/react": "^2.2.9",
     "bluebird": "^3.7.2",
     "disqus-react": "^1.1.5",
-    "dotenv": "^16.4.1",
+    "dotenv": "^16.4.4",
     "framer-motion": "^11.0.3",
     "esbuild": "^0.20.0",
     "graphql": "^16.8.1",
