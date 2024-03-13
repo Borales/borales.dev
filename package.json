@@ -11,7 +11,7 @@
     "prettier": "prettier --check ./src"
   },
   "dependencies": {
-    "@apollo/client": "^3.9.5",
+    "@apollo/client": "^3.9.7",
     "@apollo/experimental-nextjs-app-support": "^0.8.0",
     "@heroicons/react": "^2.1.1",
     "@remark-embedder/core": "^3.0.2",
