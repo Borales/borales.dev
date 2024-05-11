@@ -7,9 +7,14 @@
     "group:definitelyTyped",
     "group:emotionMonorepo",
     "group:material-uiMonorepo",
-    "group:nextjsMonorepo",
     "group:reactMonorepo",
     "group:typescript-eslintMonorepo"
+  ],
+  "packageRules": [
+    {
+      "matchSourceUrlPrefixes": ["https://github.com/vercel/next.js"],
+      "groupName": "nextjs-packages"
+    }
   ],
   "labels": ["dependencies"],
   "rangeStrategy": "bump",
