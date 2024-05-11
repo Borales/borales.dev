@@ -10,6 +10,9 @@
     "group:reactMonorepo",
     "group:typescript-eslintMonorepo"
   ],
+  "nvm": {
+    "enabled": false
+  },
   "packageRules": [
     {
       "matchSourceUrlPrefixes": ["https://github.com/vercel/next.js"],
