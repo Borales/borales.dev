@@ -2200,10 +2200,10 @@
     "@types/node" "*"
     form-data "^3.0.0"
 
-"@types/node@*", "@types/node@^20.17.6":
-  version "20.17.6"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.17.6.tgz#6e4073230c180d3579e8c60141f99efdf5df0081"
-  integrity sha512-VEI7OdvK2wP7XHnsuXbAJnEpEkF6NjSN45QJlL4VGqZSXsnicpesdTWsg9RISeSdYd3yeRj/y3k5KGjUXYnFwQ==
+"@types/node@*", "@types/node@^20.17.9":
+  version "20.17.9"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.17.9.tgz#5f141d4b7ee125cdee5faefe28de095398865bab"
+  integrity sha512-0JOXkRyLanfGPE2QRCwgxhzlBAvaRdCNMcvbd7jFfpmD4eEXll7LRwy5ymJmyeZqk7Nh7eD2LeUyQ68BbndmXw==
   dependencies:
     undici-types "~6.19.2"
 
@@ -2224,10 +2224,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@>=16", "@types/react@^18.3.12":
-  version "18.3.12"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.3.12.tgz#99419f182ccd69151813b7ee24b792fe08774f60"
-  integrity sha512-D2wOSq/d6Agt28q7rSI3jhU7G6aiuzljDGZ2hTZHIkrTLUI+AF3WMeKkEZ9nN2fkBAlcktT6vcZjDFiIhMYEQw==
+"@types/react@*", "@types/react@>=16", "@types/react@^18.3.13":
+  version "18.3.13"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.3.13.tgz#84c9690d9a271f548659760754ea8745701bfd82"
+  integrity sha512-ii/gswMmOievxAJed4PAHT949bpYjPKXvXo1v6cRB/kqc2ZR4n+SgyCyvyc5Fec5ez8VnUumI1Vk7j6fRyRogg==
   dependencies:
     "@types/prop-types" "*"
     csstype "^3.0.2"
