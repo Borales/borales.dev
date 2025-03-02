@@ -18,7 +18,7 @@
     "@remark-embedder/transformer-oembed": "^3.0.0",
     "@nextui-org/react": "^2.2.10",
     "bluebird": "^3.7.2",
-    "disqus-react": "^1.1.5",
+    "disqus-react": "^1.1.6",
     "dotenv": "^16.4.7",
     "framer-motion": "^11.11.17",
     "esbuild": "^0.25.0",
