@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base",
+    "config:recommended",
     "schedule:daily",
     "group:apolloclientMonorepo",
     "group:definitelyTyped",
@@ -15,8 +15,8 @@
   },
   "packageRules": [
     {
-      "matchSourceUrlPrefixes": ["https://github.com/vercel/next.js"],
-      "groupName": "nextjs-packages"
+      "groupName": "nextjs-packages",
+      "matchSourceUrls": ["https://github.com/vercel/next.js{/,}**"]
     }
   ],
   "labels": ["dependencies"],
