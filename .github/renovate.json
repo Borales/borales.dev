@@ -1,27 +1,4 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended",
-    "schedule:daily",
-    "group:apolloclientMonorepo",
-    "group:definitelyTyped",
-    "group:emotionMonorepo",
-    "group:material-uiMonorepo",
-    "group:reactMonorepo",
-    "group:typescript-eslintMonorepo"
-  ],
-  "nvm": {
-    "enabled": false
-  },
-  "packageRules": [
-    {
-      "groupName": "nextjs-packages",
-      "matchSourceUrls": ["https://github.com/vercel/next.js{/,}**"]
-    }
-  ],
-  "labels": ["dependencies"],
-  "rangeStrategy": "bump",
-  "postUpdateOptions": ["yarnDedupeHighest"],
-  "assignees": ["Borales"],
-  "reviewers": ["Borales"]
+  "extends": ["github>Borales/renovate-config"]
 }
