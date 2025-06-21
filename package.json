@@ -14,7 +14,7 @@
     "@apollo/client": "^3.13.8",
     "@apollo/experimental-nextjs-app-support": "^0.12.2",
     "@heroicons/react": "^2.2.0",
-    "@heroui/react": "^2.7.11",
+    "@heroui/react": "beta",
     "@remark-embedder/core": "^3.0.3",
     "@remark-embedder/transformer-oembed": "^5.0.1",
     "disqus-react": "^1.1.6",
