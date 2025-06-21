@@ -1,7 +1,7 @@
 'use client'
 
 import User from '@@components/User'
-import { Spinner } from '@nextui-org/spinner'
+import { Spinner } from '@heroui/spinner'
 import { Breadcrumbs } from './breadcrumbs'
 
 export default function BlogPostLoading() {

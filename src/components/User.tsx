@@ -1,5 +1,5 @@
 import { Link } from '@@components/elements/Link'
-import { Avatar } from '@nextui-org/avatar'
+import { Avatar } from '@heroui/avatar'
 import Image from 'next/image'
 
 export default function User() {

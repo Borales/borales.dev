@@ -3,11 +3,11 @@
 import User from '@@components/User'
 import { Link } from '@@components/elements/Link'
 import { DiscussionEmbed } from 'disqus-react'
-import { MDXRemote, MDXRemoteProps } from 'next-mdx-remote'
+import { MDXClient, MDXComponents } from 'next-mdx-remote-client'
 import { Breadcrumbs } from './breadcrumbs'
 import './styles.css'
 
-const components: MDXRemoteProps['components'] = {
+const components: MDXComponents = {
   h2: (props) => <h2 className="[&>a]:hidden [&>a]:pl-2" {...props} />,
   h3: (props: any) => <h3 className="[&>a]:hidden [&>a]:pl-2" {...props} />,
   h4: (props) => <h4 className="[&>a]:hidden [&>a]:pl-2" {...props} />,
@@ -40,7 +40,7 @@ export default function BlogPostContent({
         <span className="text-xs text-secondary">{date}</span>
       </div>
 
-      <MDXRemote {...content} components={components} />
+      <MDXClient {...content} components={components} />
 
       <DiscussionEmbed
         shortname="borales-blog"

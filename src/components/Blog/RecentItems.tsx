@@ -1,5 +1,5 @@
 import { PostType } from '@@app/types'
-import { Card, CardBody, CardFooter, CardHeader } from '@nextui-org/card'
+import { Card, CardBody, CardFooter, CardHeader } from '@heroui/card'
 import { Link } from '../elements/Link'
 import BlogListing from './Listing'
 

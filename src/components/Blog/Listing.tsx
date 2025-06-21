@@ -1,7 +1,7 @@
 import { formatDate } from '@@app/helpers/formatDate'
 import { PostType } from '@@app/types'
 import { BookOpenIcon } from '@heroicons/react/24/outline'
-import { Listbox, ListboxItem } from '@nextui-org/listbox'
+import { Listbox, ListboxItem } from '@heroui/listbox'
 
 export default function BlogListing({ posts = [] }: { posts: PostType[] }) {
   if (!posts.length) {

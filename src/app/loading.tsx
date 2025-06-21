@@ -4,7 +4,7 @@ import NameTag from '@@app/components/NameTag'
 import { Alert } from '@@app/components/elements/Alert'
 import User from '@@components/User'
 import { ExclamationTriangleIcon as WarningIcon } from '@heroicons/react/24/outline'
-import { Skeleton } from '@nextui-org/skeleton'
+import { Skeleton } from '@heroui/skeleton'
 
 export default function HomeLoading() {
   return (
