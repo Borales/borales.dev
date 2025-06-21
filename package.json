@@ -9,6 +9,7 @@
     "prettier": "prettier --check ./src",
     "start": "next start"
   },
+  "packageManager": "pnpm@10.12.1",
   "dependencies": {
     "@apollo/client": "^3.13.8",
     "@apollo/experimental-nextjs-app-support": "^0.12.2",
