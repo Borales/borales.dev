@@ -1,6 +1,6 @@
 'use client'
 
-import { BreadcrumbItem, Breadcrumbs as NextBreadcrumbs } from '@nextui-org/breadcrumbs'
+import { BreadcrumbItem, Breadcrumbs as NextBreadcrumbs } from '@heroui/breadcrumbs'
 
 export const Breadcrumbs = () => {
   return (

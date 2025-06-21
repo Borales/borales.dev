@@ -7,6 +7,7 @@ import { getLastPosts } from '@@app/graphql/posts'
 import { formatDate } from '@@app/helpers/formatDate'
 import { parseContent } from '@@app/services/markdown'
 import { notFound } from 'next/navigation'
+import { Props } from './layout'
 import BlogPostContent from './post'
 
 export async function generateStaticParams() {
@@ -14,9 +15,10 @@ export async function generateStaticParams() {
   return posts.map(({ slug }) => ({ slug }))
 }
 
-export default async function BlogPost({ params }: { params: { slug: string } }) {
+export default async function BlogPost({ params }: Props) {
   'use server'
-  const post = await getPost(params.slug)
+  const { slug } = await params
+  const post = await getPost(slug)
 
   if (!post) {
     notFound()
