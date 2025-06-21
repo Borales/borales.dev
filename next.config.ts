@@ -7,8 +7,8 @@ const nextConfig: NextConfig = {
   }
 }
 
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true'
-})
+const shouldAnalyze = process.env.ANALYZE === 'true'
+const withBundleAnalyzer = require('@next/bundle-analyzer')({ enabled: true })
 
-export default withBundleAnalyzer(nextConfig)
+// Avoid having a warning in the console about turbopack not being used
+export default shouldAnalyze ? withBundleAnalyzer(nextConfig) : nextConfig
