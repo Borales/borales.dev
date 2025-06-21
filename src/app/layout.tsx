@@ -50,7 +50,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body
         className={`${font.className} container mx-auto min-h-screen bg-background px-6 py-12 text-foreground antialiased`}
       >
-        {GA_TRACKING_ID && <Analytics code={GA_TRACKING_ID} />}
+        {GA_TRACKING_ID && (
+          <React.Suspense fallback={<div>Loading...</div>}>
+            <Analytics code={GA_TRACKING_ID} />
+          </React.Suspense>
+        )}
         <Providers>
           <div className="flex flex-col gap-6">{children}</div>
         </Providers>
