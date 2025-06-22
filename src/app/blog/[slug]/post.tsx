@@ -37,7 +37,7 @@ export default function BlogPostContent({
 
       <div className="flex place-content-between">
         <User />
-        <span className="text-xs text-secondary">{date}</span>
+        <span className="text-secondary text-xs">{date}</span>
       </div>
 
       <MDXClient {...content} components={components} />

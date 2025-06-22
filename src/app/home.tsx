@@ -18,7 +18,7 @@ export default function HomeContent({ posts }: { posts: PostType[] }) {
       <RecentItems recentPosts={posts} />
 
       <Alert>
-        <WarningIcon className="mr-2 inline aspect-square w-6 text-warning-500" />
+        <WarningIcon className="text-warning-500 mr-2 inline aspect-square w-6" />
         Apologies, the page is in progress!
       </Alert>
     </>

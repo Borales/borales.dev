@@ -21,10 +21,6 @@ export const metadata: Metadata = {
   manifest: '/site.webmanifest',
   icons: [
     {
-      rel: 'icon',
-      url: '/favicon.ico'
-    },
-    {
       rel: 'apple-touch-icon',
       sizes: '180x180',
       url: '/apple-touch-icon.png'
@@ -48,7 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body
-        className={`${font.className} container mx-auto min-h-screen bg-background px-6 py-12 text-foreground antialiased`}
+        className={`${font.className} bg-background text-foreground container mx-auto min-h-screen px-6 py-12 antialiased`}
       >
         {GA_TRACKING_ID && (
           <React.Suspense fallback={<div>Loading...</div>}>

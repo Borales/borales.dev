@@ -16,7 +16,7 @@ export default function BlogListing({ posts = [] }: { posts: PostType[] }) {
           key={slug}
           variant="flat"
           textValue={slug}
-          startContent={<BookOpenIcon className="aspect-square w-10 text-secondary" />}
+          startContent={<BookOpenIcon className="text-secondary aspect-square w-10" />}
         >
           <div className="ml-1 flex flex-col">
             <span>{title}</span>
