@@ -18,7 +18,7 @@
     "@heroui/react": "beta",
     "@remark-embedder/core": "^3.0.3",
     "@remark-embedder/transformer-oembed": "^5.0.1",
-    "disqus-react": "^1.1.6",
+    "disqus-react": "^1.1.7",
     "dotenv": "^16.6.1",
     "esbuild": "^0.25.6",
     "framer-motion": "^12.23.3",
