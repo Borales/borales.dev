@@ -13,7 +13,7 @@
   "packageManager": "pnpm@10.13.1",
   "dependencies": {
     "@apollo/client": "^3.13.9",
-    "@apollo/experimental-nextjs-app-support": "^0.12.2",
+    "@apollo/experimental-nextjs-app-support": "^0.12.3",
     "@heroicons/react": "^2.2.0",
     "@heroui/react": "^2.8.2",
     "@remark-embedder/core": "^3.0.3",
