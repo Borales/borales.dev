@@ -27,12 +27,12 @@ export const getLastPosts = async (limit: number = 5) => {
     query: recentPostsQuery,
     variables: { limit }
   })
-  return data.posts
+  return data?.posts || []
 }
 
 export const getAllPosts = async () => {
   const { data } = await getClient().query<{ posts: PostType[] }>({
     query: allPostsQuery
   })
-  return data.posts
+  return data?.posts || []
 }

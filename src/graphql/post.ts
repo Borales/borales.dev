@@ -18,5 +18,10 @@ export const getPost = async (slug: string): Promise<PostType> => {
     query,
     variables: { slug }
   })
+
+  if (!data?.post) {
+    throw new Error(`Post with slug "${slug}" not found`)
+  }
+
   return data.post
 }
