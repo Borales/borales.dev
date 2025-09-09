@@ -12,7 +12,7 @@
   },
   "packageManager": "pnpm@10.15.0",
   "dependencies": {
-    "@apollo/client": "^4.0.2",
+    "@apollo/client": "^4.0.4",
     "@apollo/client-integration-nextjs": "^0.13.0",
     "@heroicons/react": "^2.2.0",
     "@heroui/react": "^2.8.2",
