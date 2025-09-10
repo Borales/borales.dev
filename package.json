@@ -19,7 +19,7 @@
     "@remark-embedder/core": "^3.0.3",
     "@remark-embedder/transformer-oembed": "^5.0.1",
     "disqus-react": "^1.1.7",
-    "dotenv": "^17.2.1",
+    "dotenv": "^17.2.2",
     "esbuild": "^0.25.9",
     "framer-motion": "^12.23.12",
     "graphql": "^16.11.0",
