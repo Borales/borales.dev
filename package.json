@@ -10,7 +10,7 @@
     "prettier:fix": "prettier --write ./src",
     "start": "next start"
   },
-  "packageManager": "pnpm@10.15.0",
+  "packageManager": "pnpm@10.16.1",
   "dependencies": {
     "@apollo/client": "^4.0.4",
     "@apollo/client-integration-nextjs": "^0.13.0",
