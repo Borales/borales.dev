@@ -37,7 +37,7 @@
     "@next/bundle-analyzer": "^15.5.3",
     "@tailwindcss/postcss": "^4.1.12",
     "@types/gtag.js": "^0.0.20",
-    "@types/node": "^22.18.13",
+    "@types/node": "^22.19.1",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
     "eslint": "^9.36.0",
