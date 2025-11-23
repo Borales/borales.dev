@@ -2,6 +2,8 @@ import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
   reactStrictMode: false,
+  // Enable React 19 Compiler for automatic optimizations
+  reactCompiler: true,
   images: {
     remotePatterns: [{ protocol: 'https', hostname: 'avatars2.githubusercontent.com' }]
   }
