@@ -2,9 +2,9 @@ import Analytics from '@@components/Analytics'
 import { GA_TRACKING_ID } from '@@services/gtag'
 import type { Metadata, Viewport } from 'next'
 import * as React from 'react'
+import { Providers } from '../components/providers'
 import font from '../font'
 import './globals.css'
-import { Providers } from './providers'
 
 export const viewport: Viewport = {
   colorScheme: 'light dark',
