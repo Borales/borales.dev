@@ -112,8 +112,8 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0(prettier@3.7.3)
       prettier-plugin-tailwindcss:
-        specifier: ^0.7.1
-        version: 0.7.1(prettier-plugin-organize-imports@4.3.0(prettier@3.7.3)(typescript@5.9.3))(prettier@3.7.3)
+        specifier: ^0.7.2
+        version: 0.7.2(prettier-plugin-organize-imports@4.3.0(prettier@3.7.3)(typescript@5.9.3))(prettier@3.7.3)
       tailwind-variants:
         specifier: ^3.2.2
         version: 3.2.2(tailwind-merge@3.4.0)(tailwindcss@4.1.17)
@@ -3323,6 +3323,7 @@ packages:
   next@16.0.7:
     resolution: {integrity: sha512-3mBRJyPxT4LOxAJI6IsXeFtKfiJUbjCLgvXO02fV8Wy/lIhPvP94Fe7dGhUgHXcQy4sSuYwQNcOLhIfOm0rL0A==}
     engines: {node: '>=20.9.0'}
+    deprecated: This version has a security vulnerability. Please upgrade to a patched version. See https://nextjs.org/blog/CVE-2025-66478 for more details.
     hasBin: true
     peerDependencies:
       '@opentelemetry/api': ^1.1.0
@@ -3463,8 +3464,8 @@ packages:
     peerDependencies:
       prettier: ^3.0.0
 
-  prettier-plugin-tailwindcss@0.7.1:
-    resolution: {integrity: sha512-Bzv1LZcuiR1Sk02iJTS1QzlFNp/o5l2p3xkopwOrbPmtMeh3fK9rVW5M3neBQzHq+kGKj/4LGQMTNcTH4NGPtQ==}
+  prettier-plugin-tailwindcss@0.7.2:
+    resolution: {integrity: sha512-LkphyK3Fw+q2HdMOoiEHWf93fNtYJwfamoKPl7UwtjFQdei/iIBoX11G6j706FzN3ymX9mPVi97qIY8328vdnA==}
     engines: {node: '>=20.19'}
     peerDependencies:
       '@ianvs/prettier-plugin-sort-imports': '*'
@@ -8592,7 +8593,7 @@ snapshots:
     dependencies:
       prettier: 3.7.3
 
-  prettier-plugin-tailwindcss@0.7.1(prettier-plugin-organize-imports@4.3.0(prettier@3.7.3)(typescript@5.9.3))(prettier@3.7.3):
+  prettier-plugin-tailwindcss@0.7.2(prettier-plugin-organize-imports@4.3.0(prettier@3.7.3)(typescript@5.9.3))(prettier@3.7.3):
     dependencies:
       prettier: 3.7.3
     optionalDependencies:
