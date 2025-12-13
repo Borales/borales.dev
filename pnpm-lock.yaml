@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@apollo/client':
-        specifier: ^4.0.9
-        version: 4.0.9(graphql@16.12.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(rxjs@7.8.2)
+        specifier: ^4.0.10
+        version: 4.0.10(graphql@16.12.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(rxjs@7.8.2)
       '@apollo/client-integration-nextjs':
         specifier: ^0.14.1
-        version: 0.14.1(@apollo/client@4.0.9(graphql@16.12.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(rxjs@7.8.2))(@types/react@19.2.7)(graphql@16.12.0)(next@16.0.10(@babel/core@7.28.5)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1))(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(rxjs@7.8.2)
+        version: 0.14.1(@apollo/client@4.0.10(graphql@16.12.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(rxjs@7.8.2))(@types/react@19.2.7)(graphql@16.12.0)(next@16.0.10(@babel/core@7.28.5)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1))(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(rxjs@7.8.2)
       '@heroicons/react':
         specifier: ^2.2.0
         version: 2.2.0(react@19.2.1)
@@ -147,8 +147,8 @@ packages:
       react-dom: ^19
       rxjs: ^7.3.0
 
-  '@apollo/client@4.0.9':
-    resolution: {integrity: sha512-Lh2drMzFE9x5jVS8RKmlGL5SORkvpyUJIT+wTErxDUR2HpWePiBfhhcHHRSlZFiCR866ewCv4euTc4IDF0GWxw==}
+  '@apollo/client@4.0.10':
+    resolution: {integrity: sha512-xls/1tQq8GjAwn/Zo2LbbwHek7Qn+GrVc6qYgxDknB5xqpa9Lu5+Yt8duRWCUzEAUnf7vh2p61Uvx+C26N4l7g==}
     peerDependencies:
       graphql: ^16.0.0
       graphql-ws: ^5.5.5 || ^6.0.3
@@ -4045,10 +4045,10 @@ snapshots:
 
   '@alloc/quick-lru@5.2.0': {}
 
-  '@apollo/client-integration-nextjs@0.14.1(@apollo/client@4.0.9(graphql@16.12.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(rxjs@7.8.2))(@types/react@19.2.7)(graphql@16.12.0)(next@16.0.10(@babel/core@7.28.5)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1))(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(rxjs@7.8.2)':
+  '@apollo/client-integration-nextjs@0.14.1(@apollo/client@4.0.10(graphql@16.12.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(rxjs@7.8.2))(@types/react@19.2.7)(graphql@16.12.0)(next@16.0.10(@babel/core@7.28.5)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1))(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(rxjs@7.8.2)':
     dependencies:
-      '@apollo/client': 4.0.9(graphql@16.12.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(rxjs@7.8.2)
-      '@apollo/client-react-streaming': 0.14.0(@apollo/client@4.0.9(graphql@16.12.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(rxjs@7.8.2))(@types/react@19.2.7)(graphql@16.12.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(rxjs@7.8.2)
+      '@apollo/client': 4.0.10(graphql@16.12.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(rxjs@7.8.2)
+      '@apollo/client-react-streaming': 0.14.0(@apollo/client@4.0.10(graphql@16.12.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(rxjs@7.8.2))(@types/react@19.2.7)(graphql@16.12.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(rxjs@7.8.2)
       next: 16.0.10(@babel/core@7.28.5)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
       react: 19.2.1
       rxjs: 7.8.2
@@ -4057,9 +4057,9 @@ snapshots:
       - graphql
       - react-dom
 
-  '@apollo/client-react-streaming@0.14.0(@apollo/client@4.0.9(graphql@16.12.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(rxjs@7.8.2))(@types/react@19.2.7)(graphql@16.12.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(rxjs@7.8.2)':
+  '@apollo/client-react-streaming@0.14.0(@apollo/client@4.0.10(graphql@16.12.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(rxjs@7.8.2))(@types/react@19.2.7)(graphql@16.12.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(rxjs@7.8.2)':
     dependencies:
-      '@apollo/client': 4.0.9(graphql@16.12.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(rxjs@7.8.2)
+      '@apollo/client': 4.0.10(graphql@16.12.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(rxjs@7.8.2)
       '@types/react-dom': 19.2.3(@types/react@19.2.7)
       '@wry/equality': 0.5.7
       graphql: 16.12.0
@@ -4069,7 +4069,7 @@ snapshots:
     transitivePeerDependencies:
       - '@types/react'
 
-  '@apollo/client@4.0.9(graphql@16.12.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(rxjs@7.8.2)':
+  '@apollo/client@4.0.10(graphql@16.12.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(rxjs@7.8.2)':
     dependencies:
       '@graphql-typed-document-node/core': 3.2.0(graphql@16.12.0)
       '@wry/caches': 1.0.1
