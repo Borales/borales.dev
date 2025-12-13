@@ -14,7 +14,7 @@
   },
   "packageManager": "pnpm@10.24.0",
   "dependencies": {
-    "@apollo/client": "^4.0.9",
+    "@apollo/client": "^4.0.10",
     "@apollo/client-integration-nextjs": "^0.14.1",
     "@heroicons/react": "^2.2.0",
     "@heroui/react": "^2.8.5",
